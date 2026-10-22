@@ -294,21 +294,21 @@ in the world.
     const divs = document.querySelectorAll("body > div")
     
     document.addEventListener("DOMContentLoaded", () => {
-      divs.forEach((div) => div.hidden = true)
+      divs.forEach((div) => div.style.display = "none")
       
-      loading.hidden = false
+      loading.style.display = 'block'
       setTimeout(() => {
-        loading.hidden = true
-        first.hidden = false
+        loading.style.display = "none"
+        first.style.dusplay = "block"
       }, 6000)
       
     btn.addEventListener("click", () => {
-      first.hidden = true
-      surprise.hidden = false
+      first.style.display = "none"
+      surprise.style.display = "block"
     })
     btn2.addEventListener("click", () => {
-      first.hidden = false
-      surprise.hidden = true
+      first.style.display = false
+      surprise.style.display = "none"
     })
     })
   </script>
